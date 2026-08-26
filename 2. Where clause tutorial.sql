@@ -65,3 +65,8 @@ where first_name like '%a';
 select*
 from parks_and_recreation.employee_demographics
 where first_name like '%a%';
+
+-- we can also use it to check on dates --
+select*
+from parks_and_recreation.employee_demographics
+where birth_date like '1989%';
