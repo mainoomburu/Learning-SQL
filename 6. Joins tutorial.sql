@@ -85,6 +85,8 @@ join parks_and_recreation.employee_salary as B
 	on A.employee_id + 1 = B.employee_id;
     
 -- Joining multiple tables --
+-- the parks department table is a reference table used to reference the departments --
+-- employee demographics table and employee salary table can change depending with the employment or termination of an employee --
 select*
 from parks_and_recreation.employee_demographics as A
 join parks_and_recreation.employee_salary as B
