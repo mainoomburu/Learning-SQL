@@ -36,7 +36,6 @@ from parks_and_recreation.employee_demographics as A
 join parks_and_recreation.employee_salary as B
 	on A.employee_id = B.employee_id;
     
--- dense rank --
 -- if we want to rank based on the highest salary first down to the lowest salary, we add an order by to our window function --
 select A.employee_id, A.first_name, A.first_name, gender, salary,
 row_number() over(partition by gender order by salary desc)
