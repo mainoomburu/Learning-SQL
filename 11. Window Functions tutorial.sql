@@ -28,7 +28,6 @@ from parks_and_recreation.employee_demographics as A
 join parks_and_recreation.employee_salary as B
 	on A.employee_id = B.employee_id;
     
--- row numbers can repeat themselves if we want to partition them by a specific column based on a random order on how the data was stored--
 -- row number gives each row a number based on what you are partitioning by --
 -- when using row number, it won't have duplicate  rows on what we are partitioning by --
 select A.employee_id, A.first_name, A.first_name, gender, salary,
