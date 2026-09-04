@@ -55,6 +55,10 @@ begin
 end $$
 delimiter ;
 
+-- To check whether the event was applied --
+select*
+from parks_and_recreation.employee_demographics;
+
 
 
 
