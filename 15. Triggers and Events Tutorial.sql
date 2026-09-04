@@ -42,7 +42,7 @@ values(16, 'Kimmy', 'Antonelli', 19, 'Male', Null);
 
 -- Event --
 -- Takes place when scheduled --
-drop event if exists delete_null;
+drop event if exists parks_and_recreation.delete_null;
 
 delimiter $$
 create event delete_null
